@@ -33,9 +33,9 @@ jobs:
             - name: Set Default DevHub
               run: sfdx force:config:set defaultdevhubusername=rohit.sfdx@sfdx.com
 
-            #Creates a scratch org to test our code
-            - name: Create Scratch Org
-              run: sfdx force:org:create -a actionsBuild -d 1 -f config/project-scratch-def.json -s
+            # #Creates a scratch org to test our code
+            # - name: Create Scratch Org
+            #   run: sfdx force:org:create -a actionsBuild -d 1 -f config/project-scratch-def.json -s
 
             #Pushes all configurations to scratch org
             - name: Pushing source
