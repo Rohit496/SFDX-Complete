@@ -5,8 +5,6 @@ name: SFDX Build
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-    push:
-        branches: [main]
     pull_request:
         branches: [main]
 
@@ -27,7 +25,7 @@ jobs:
               uses: sfdx-actions/setup-sfdx@v1
               with:
                   # Authorize a Salesforce org using an SFDX auth URL
-                  sfdx-auth-url: ${{ secrets.DEVHUB_URL2 }}
+                  sfdx-auth-url: ${{ secrets.DEVHUB_URL1 }}
 
             # Sets the default devhub org for us to create scratch orgs and packages against
             - name: Set Default DevHub
