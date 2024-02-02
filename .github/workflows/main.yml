@@ -43,7 +43,7 @@ jobs:
 
             #Run all Apex tests in our scratch org
             - name: Running Apex Tests
-              run: sfdx force:apex:test:run -l RunLocalTests
+              run: sfdx force:apex:test:run -l RunLocalTests -w 50
 
         #Delete scratch org after successful build
         # - name: Deleting Scratch Org
