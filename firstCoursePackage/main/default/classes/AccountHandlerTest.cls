@@ -1,7 +1,7 @@
 @isTest
 private class AccountHandlerTest {
     @IsTest
-    static void methodName() {
+    static void setAccountNames() {
         Test.startTest();
         insert new Account(Name = 'Different');
         Test.stopTest();
