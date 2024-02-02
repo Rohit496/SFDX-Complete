@@ -6,15 +6,9 @@ name: SFDX Build
 # events but only for the master branch
 on:
     push:
-
-        branches: [dev]
-    pull_request:
-        branches: [dev]
-
         branches: [main]
     pull_request:
         branches: [main]
-
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -33,19 +27,11 @@ jobs:
               uses: sfdx-actions/setup-sfdx@v1
               with:
                   # Authorize a Salesforce org using an SFDX auth URL
-
-                  sfdx-auth-url: ${{ secrets.DEVHUB_URL2 }}
-
-            # Sets the default devhub org for us to create scratch orgs and packages against
-            - name: Set Default DevHub
-              run: sfdx force:config:set defaultdevhubusername=test-nyd8boj1wcru@example.com
-
                   sfdx-auth-url: ${{ secrets.DEVHUB_URL1 }}
 
             # Sets the default devhub org for us to create scratch orgs and packages against
             - name: Set Default DevHub
-              run: sfdx force:config:set defaultdevhubusername=test-ifqh40vo9iad@example.com
-
+              run: sfdx force:config:set defaultdevhubusername=test-nyd8boj1wcru@example.com
 
             # #Creates a scratch org to test our code
             # - name: Create Scratch Org
