@@ -1,0 +1,21 @@
+{
+  "packageDirectories": [
+    {
+      "path": "firstCoursePackage",
+      "default": true,
+      "package": "FirstCoursePackage",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT",
+      "versionDescription": "This is my first package in SFDX"
+    }
+  ],
+  "name": "SFDX-Complete-Guide",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "59.0",
+  "packageAliases": {
+    "FirstCoursePackage": "0HoIR000000wk2T0AQ",
+    "FirstCoursePackage@0.1.0-1": "04tIR000001MQGyYAO",
+    "FirstCoursePackage@0.1.0-2": "04tIR000001MQH3YAO"
+  }
+}
