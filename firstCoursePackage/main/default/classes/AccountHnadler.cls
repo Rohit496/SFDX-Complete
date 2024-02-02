@@ -6,4 +6,5 @@ public with sharing class AccountHnadler {
             System.debug('AFTER NAME: + newAccount.Name');
         }
     }
+    // added this commit
 }
