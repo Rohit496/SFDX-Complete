@@ -31,7 +31,7 @@ jobs:
 
             # Sets the default devhub org for us to create scratch orgs and packages against
             - name: Set Default DevHub
-              run: sfdx force:config:set defaultdevhubusername=rohit.sfdx@sfdx.com
+              run: sfdx force:config:set defaultdevhubusername=test-ifqh40vo9iad@example.com
 
             # #Creates a scratch org to test our code
             # - name: Create Scratch Org
