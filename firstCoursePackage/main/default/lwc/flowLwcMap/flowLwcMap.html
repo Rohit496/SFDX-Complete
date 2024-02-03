@@ -1,0 +1,10 @@
+<template>
+    <template lwc:if={isMapLoad}>
+        <div class="slds-m-around_medium">
+            <lightning-map
+                map-markers={mapMarkers}
+                zoom-level="12"
+            ></lightning-map>
+        </div>
+    </template>
+</template>
